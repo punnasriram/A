@@ -1,0 +1,153 @@
+
+
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 0px 40px;
+    background-color: #fff !important;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .upload-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .upload-form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .upload-box {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .upload-box input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .upload-box .icon {
+    font-size: 48px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .upload-box p {
+    margin: 5px 0;
+    color: #666;
+  }
+  .folders {
+    margin-top: 40px;
+  }
+  
+  .upload-box .browse {
+    color: #007BFF;
+    cursor: pointer;
+  }
+  
+  .upload-box .browse:hover {
+    text-decoration: underline;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Added space between buttons */
+  }
+  
+  .button-group .cancel {
+    background-color: transparent;
+    color: #666;
+    cursor: pointer;
+  }
+  .btn {
+    width: 100px;
+    background-color: #00c4cc;
+    border: none;
+    color: #fff;
+  }
+  
+  .button-group .cancel:hover {
+    text-decoration: underline;
+  }
+  
+  .upload-box button:hover {
+    background-color: #0099CC;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  
+  .folder {
+    display: flex;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 36px; /* Increased font size for larger icons */
+  }
+  
+  .folder p {
+    margin-left: 10px;
+    font-size: 24px; /* Increased font size for text */
+  }
+  .straight {
+    display: flex;
+  }
+  
+  .files {
+    margin-left: 80px;
+  }
+  
+  .file {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .file p {
+    margin: 0;
+    margin-left: 10px;
+  }
+  

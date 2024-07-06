@@ -1,0 +1,87 @@
+/* body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+ .Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff !important;
+ }
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px 0px 40px;
+  background-color: #fff !important;
+}
+.line {
+  background-color: #fff !important;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  height: 80vh;
+  width: 100vh;
+}
+.img {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+.file-upload {
+  border: 2px dashed #ccc;
+  padding: 30px;
+  width: 300px;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+
+}
+.btn {
+  width: 100px;
+  background-color: #00c4cc;
+  border: none;
+  color: #fff;
+}
+/* button {
+  padding: 10px 20px;
+} */
+
+p {
+  margin-top: 10px;
+}
+
+.folders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.folders img {
+  width: 100px;
+  height: 100px;
+}
+
+.upload {
+  width: 100px;
+  background-color: #00c4cc;
+  border: none;
+  margin-top: 10px;
+}
+label {
+  margin-top: 20px;
+}
+.folders p {
+  margin-top: 10px;
+}

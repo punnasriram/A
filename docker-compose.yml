@@ -1,0 +1,44 @@
+version: '3'
+services:
+  frontend:
+    build: 
+      context: ./client
+    container_name: my-react-app
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    networks:
+      - mern-network
+
+  backend:
+    build: 
+      context: ./server
+    container_name: my-node-api
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+    networks:
+      - mern-network
+
+  database:
+    image: mongo
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - volumesOne:/data/db
+    networks:
+      - mern-network
+
+volumes:
+  volumesOne:
+    driver: local
+
+networks:
+  mern-network:
+    driver: bridge
